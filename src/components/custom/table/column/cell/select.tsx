@@ -1,8 +1,8 @@
 import { Row } from "@tanstack/react-table";
-import { Payment } from "@/components/custom/table/page.d";
+import { TypeOfPayment } from "@/components/custom/table/page.d";
 import { Checkbox } from "@/components/ui/checkbox";
 
-export default function CSelect({ row }: { row: Row<Payment> }) {
+export default function CSelect({ row }: { row: Row<TypeOfPayment> }) {
     return (
         <Checkbox
             checked={row.getIsSelected()}

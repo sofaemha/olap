@@ -26,11 +26,11 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-import { Payment } from "@/components/custom/table/page.d"
+import { TypeOfPayment } from "@/components/custom/table/page.d"
 import { columns } from "@/components/custom/table/column/page"
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
-const data: Payment[] = [
+const data: TypeOfPayment[] = [
   {
     id: "m5gr84i9",
     amount: 316,

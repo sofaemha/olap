@@ -1,4 +1,4 @@
-import { Payment } from "@/components/custom/table/page.d"
+import { TypeOfPayment } from "@/components/custom/table/page.d"
 
 import { ArrowUpDown, MoreHorizontal } from "lucide-react"
 import { ColumnDef as useType } from "@tanstack/react-table"
@@ -19,7 +19,7 @@ import CCell from "@/components/custom/table/column/cell/cell"
 import HSelect from "@/components/custom/table/column/header/select"
 import HSort from "@/components/custom/table/column/header/sort"
 
-const c_select: useType<Payment>[] = [
+const c_select: useType<TypeOfPayment>[] = [
     {
         id: "select",
         enableSorting: false,
@@ -29,7 +29,7 @@ const c_select: useType<Payment>[] = [
     },
 ]
 
-const c_status: useType<Payment>[] = [
+const c_status: useType<TypeOfPayment>[] = [
     {
         accessorKey: "status",
         header: ({ column }) => <HSort column={column}>Status</HSort>,
@@ -37,7 +37,7 @@ const c_status: useType<Payment>[] = [
     },
 ]
 
-const c_email: useType<Payment>[] = [
+const c_email: useType<TypeOfPayment>[] = [
     {
         accessorKey: "email",
         header: ({ column }) => <HSort column={column}>E-Mail</HSort>,
@@ -45,7 +45,7 @@ const c_email: useType<Payment>[] = [
     },
 ]
 
-const c_amount: useType<Payment>[] = [
+const c_amount: useType<TypeOfPayment>[] = [
     {
         accessorKey: "amount",
         header: ({ column }) => <HSort column={column}>Amount</HSort>,
@@ -53,7 +53,7 @@ const c_amount: useType<Payment>[] = [
     },
 ]
 
-export const columns: useType<Payment>[] = [
+export const columns: useType<TypeOfPayment>[] = [
     ...c_select,
     ...c_status,
     ...c_email,

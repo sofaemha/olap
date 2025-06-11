@@ -1,7 +1,7 @@
 import { Row } from "@tanstack/react-table"
-import { Payment } from "@/components/custom/table/page.d";
+import { TypeOfPayment } from "@/components/custom/table/page.d";
 
-export default function CAmount({ row }: { row: Row<Payment> }) {
+export default function CAmount({ row }: { row: Row<TypeOfPayment> }) {
     const amount = parseFloat(row.getValue("amount"))
 
     const formatted = new Intl.NumberFormat("en-US", {
